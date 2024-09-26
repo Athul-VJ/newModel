@@ -171,6 +171,18 @@ body {
 }
 
 
+.icon-circle3 {
+  color: white;
+  margin-top:5px;
+  text-align: center;
+  width: 40px;  /* Adjust width as needed */
+  height: 40px; /* Adjust height as needed */
+  font-size: 1.5rem; /* Adjust icon size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 
 
