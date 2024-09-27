@@ -5,6 +5,14 @@
     height: auto;
   }
   
+  .footer_section {
+    display: flex;
+    justify-content: space-around;
+    flex-direction:column;
+  }
+  .social_box{
+    padding:0px 0px 30px 70px;
+  }
 
   #navbarSupportedContent {
     opacity: 1;
@@ -175,6 +183,15 @@
     top: 95%;
 
   }
+
+
+  .icon-circle {
+    background-color:red;
+    margin-left:90px;
+  }
+
+
+
 
 
   .client_section .carousel-control-prev,
