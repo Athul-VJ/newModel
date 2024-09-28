@@ -146,7 +146,7 @@ body {
 .icon-circle {
   display: inline-block;
   padding: 4px; /* Adjust padding to control size */
-  border-radius: 60%; /* Makes the border circular */
+  border-radius: 55%; /* Makes the border circular */
   margin-right:3px;
   border: 2px solid black; /* Black border */
   color: white; /* Icon color */
