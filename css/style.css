@@ -123,24 +123,18 @@ body {
 
 
 
-.white-icon{
-  
+.nav-link span {
+  display: inline-block; /* Limit the hover area to the text width */
+  padding-bottom: 5px;
+  font-weight: bold;
 }
 
-
-.nav-link {
-  padding-bottom: 5px; /* Keep this to allow space for the border */
-  margin-bottom: 2px; /* Adjust to keep a space below the text */
-}
-
-
-.nav-link:hover {
-  border-bottom: 4px yellow solid;
+.nav-link span:hover {
+  border-bottom: 4px solid yellow; /* Add the border-bottom only on text */
   transition: all 0.3s ease;
-  border-bottom: -2px;
-  padding-bottom: 5px; /* Keep this to allow space for the border */
-  margin-bottom: 2px; /* Adjust to keep a space below the text */
 }
+
+
 
 
 .icon-circle {
