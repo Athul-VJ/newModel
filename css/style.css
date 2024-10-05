@@ -134,6 +134,32 @@ body {
   transition: all 0.3s ease;
 }
 
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+
+.detail-box {
+  animation: scroll 10s linear infinite;
+  margin-right: 10px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.offer-zone::-webkit-scrollbar {
+  display: none;
+}
+
 
 
 
@@ -180,6 +206,10 @@ body {
 
 .service-para{
   color:white;
+}
+
+.nav {
+  padding-left:13%;
 }
 
 
@@ -1861,23 +1891,7 @@ a:focus {
   white-space: nowrap; /* Prevent line breaks */
 }
 
-.detail-box {
-  animation: scroll 10s linear infinite;
-  margin-right: 10px;
-}
 
-@keyframes scroll {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-.offer-zone::-webkit-scrollbar {
-  display: none;
-}
 
 
 /* .offer-zone::-webkit-scrollbar{
