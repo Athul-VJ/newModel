@@ -1892,6 +1892,23 @@ a:focus {
 }
 
 
+.detail-boxs {
+  animation: scroll 10s linear infinite;
+  margin-right: 10px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.offer-zone::-webkit-scrollbar {
+  display: none;
+}
 
 
 /* .offer-zone::-webkit-scrollbar{
