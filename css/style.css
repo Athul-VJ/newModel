@@ -1861,7 +1861,7 @@ a:focus {
   white-space: nowrap; /* Prevent line breaks */
 }
 
-.detail-box {
+.detail-boxs {
   animation: scroll 10s linear infinite;
   margin-right: 10px;
 }
