@@ -195,6 +195,11 @@
     padding-left:0%;
   }
 
+  .contact-section-main{
+    display:flex;
+    flex-direction:column;
+    gap:5%;
+  }
 
 
 
