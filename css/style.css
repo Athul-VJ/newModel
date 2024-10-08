@@ -142,7 +142,7 @@ body {
 
 
 
-.detail-box {
+.detail-boxs {
   animation: scroll 10s linear infinite;
   margin-right: 10px;
 }
@@ -153,7 +153,11 @@ body {
   }
   100% {
     transform: translateX(-100%);
-  }
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+}
 }
 
 .offer-zone::-webkit-scrollbar {
