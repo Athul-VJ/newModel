@@ -1,3 +1,16 @@
+@media only screen and (max-width: 767px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .img-thumbnail-md {
+    width: 150px; /* Set your preferred size for medium devices */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   color: #f5f5f5;
@@ -1032,7 +1045,7 @@ h2 {
 }
 
 .layout_padding-top {
-  padding-top: 90px;
+  padding-top: 2px;
 }
 
 .layout_padding-bottom {
@@ -1960,6 +1973,7 @@ background-color: #fcd104;
 flex: 40%;display: flex;
 justify-content: center;
 align-items: center;
+margin-bottom: -90px;
 
 }
 .printing-services-conatiner{
