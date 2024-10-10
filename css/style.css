@@ -210,7 +210,7 @@ body {
 .icon-circle2 {
   background-color: black;
   color: white;
-  border-radius:30%;
+  border-radius:5px;
   margin-top:5px;
   text-align: center;
   width: 40px;  /* Adjust width as needed */
@@ -221,10 +221,15 @@ body {
   justify-content: center;
 }
 
+
+.printing-services-parargraph{
+  font-size:230px; 
+  color:black;
+  font-weight:900;
+  margin-top:-50px;
+}
 
 .icon-circle3 {
-  color: white;
-  margin-top:5px;
   text-align: center;
   width: 40px;  /* Adjust width as needed */
   height: 40px; /* Adjust height as needed */
@@ -232,8 +237,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom:35px;
 }
 
+
+.footer-container{
+  display:flex;
+  justify-content:space-between;
+  padding: 0% 5% 0% 5%;
+}
 
 .service-para{
   color:white;
@@ -516,7 +528,8 @@ color: #000;
     height: 8em;
     height: 12em;
     border-radius: 23px;
-    margin: -14px
+    margin: -14px;
+    padding: 20px 0px 20px 0px;
   }
 .question-mark-wrapper{
   display: none;
@@ -1833,7 +1846,7 @@ a:focus {
 }
 
 .footer_section p {
-  color: #fcd104;
+  color: white;
   font-weight: bold;
   margin: 0;
   padding: 25px 0 20px 0;
@@ -1842,7 +1855,7 @@ a:focus {
 }
 
 .footer_section a {
-  color: #fcd104;
+  color: white;
 }
 
 /* end footer section*/
