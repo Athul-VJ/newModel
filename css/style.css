@@ -185,7 +185,7 @@ body {
 }
 
 .contact-section {
-  padding: 4% 10% 0% 5%;
+  padding: 4% 12% 0% 12%;
   background-color:white;
   color:black;
 }
@@ -254,6 +254,48 @@ body {
 .nav {
   padding-left:13%;
 }
+
+
+.staff-login-section{
+  position: absolute;
+  right: 31px;
+  height: 54px;
+  padding-right:0px;
+  margin-top: 0px;
+}
+
+.contact-section-header-one{
+  font-size:70px;
+}
+.contact-section-paragraph{
+  font-size:17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -632,8 +674,9 @@ color: #000;
     margin-top: -12em;
   }
   .looking{
-    font-size: 45px;
+    font-size: 49px;
     font-weight: 900;
+    padding-top:3%;
   }
   .bottom-left-img{
     width: 28em;
@@ -748,7 +791,7 @@ body{
 }
 .logos{
   overflow:hidden;
-  padding:60px 0 ;
+  padding:60px 0;
   background:rgb(255, 255, 255);
   white-space:nowrap;
   position:relative;
@@ -1973,7 +2016,8 @@ a:focus {
 .delivery-section-left{
   flex: 60%;
   padding-top: 3rem;
-
+  padding-left:5%;
+  padding-right:5%;
 }
 .delivery-section-contents{
   max-width: 800px;

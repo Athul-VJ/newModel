@@ -213,6 +213,36 @@
   .freelance_section .tab_container .t-link-box .detail-box h3 {
     font-size: 22px;
   }
+
+  .staff-login-section{
+    padding-right:100px;
+    margin-top:10px;
+  }
+  .slider_section .row > div {
+    padding: 0% 5% 0% 5%;
+  }
+
+  .col-lg-12, .col-md-10{
+    padding-right:0px;
+    padding-left:0px;
+  }
+  .exprience-boxes{
+    padding-left:15%;
+  }
+  .contact-section-header-one{
+    font-size:50px;
+  }
+  .last-footer-section{
+    padding-bottom:5%:
+  }
+  .footer_section{
+    padding-top:5%;
+  }
+  .hide-on-mobile{
+    display:none !important;
+    margin-bottom:none !important;
+  }
+
 }
 
 @media (max-width: 360px) {}
