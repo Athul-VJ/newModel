@@ -1982,7 +1982,6 @@ a:focus {
 
 .detail-boxs {
   animation: scroll 10s linear infinite;
-  margin-right: 10px;
 }
 
 @keyframes scroll {
