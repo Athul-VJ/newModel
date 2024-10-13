@@ -1,3 +1,9 @@
+@media (max-width: 1600px) {
+  .bottom-right-image{
+    display:none;
+  }
+}
+
 @media (max-width: 1120px) {
   .col-lg-12, .col-md-10{
     padding-right:0px;
@@ -241,6 +247,13 @@
 .social_box{
   padding:5% 0px 30px 28%;
 }
+.track-button-container{
+  display:flex;
+  flex-direction:column;
+}
+.icon-circle3{
+  margin-top:12%;
+}
 }
 
 @media (max-width: 480px) {}
@@ -351,9 +364,7 @@
    .social_box{
     padding:5% 0px 30px 15%;
   }
-  .icon-circle3{
-    padding-top:80%;
-  }
+  
 
 }
 

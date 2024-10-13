@@ -272,6 +272,22 @@ body {
 }
 
 
+.delivery-section-left {
+  position: relative;
+  padding: 0; /* Remove any padding */
+  margin: 0;  /* Remove any margin */
+}
+
+.bottom-right-image {
+  position: absolute;
+  bottom: 0;   /* Aligns the image to the bottom of the container */
+  right: 0;    /* Aligns the image to the right of the container */
+  width: 300px; /* You can adjust the size of the image as needed */
+  margin: 0;   /* Ensure no margin is applied */
+  padding: 0;
+  height: auto;
+  z-index: 1;  /* Optional: Ensures the image is not overlapped by other elements */
+}
 
 
 
