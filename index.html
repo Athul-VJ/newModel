@@ -1035,48 +1035,57 @@
   </div>
 
 </section>
-
 <style>
   .experience-count {
   font-size: 40px;
-  transition: all 0.3s ease;
-  position: relative;
+  font-weight: bold;
+  color: white;
 }
 
+.experience-section-card {
+  text-align: center;
+  margin: 20px;
+}
 
+.experience-count-title {
+  display: block;
+  font-size: 18px;
+  color: white;
+}
 
-.experience-section-card:hover .experience-count {
-  animation-play-state: paused; /* Pauses animation on hover */
+.experience-section {
+  padding: 50px 0;
+  background-color: #f9f9f9;
 }
 
 </style>
 
-<section class="experience-section poppins-medium" >
+
+<section class="experience-section poppins-medium">
   <div class="container">
     <div class="row">
 
       <div class="experience-section-card" style="position: relative;">
-        <p class="experience-count">34</p>
+        <p class="experience-count" data-count="34">0</p>
         <label class="experience-count-title" for="">Expert Workers</label>
         <span style="display: flex;width: 8px;height: 120px;background-color: #fff;position: absolute;right: 0;"></span>
       </div>
+
       <div class="experience-section-card" style="position: relative;">
-        <p class="experience-count">3</p>
-        <label class="experience-count-title" for="">Outlets 
-          
-        </label>
+        <p class="experience-count" data-count="3">0</p>
+        <label class="experience-count-title" for="">Outlets</label>
         <span style="display: flex;width: 8px;height: 120px;background-color: #fff;position: absolute;right: 0;"></span>
       </div>
-     
+
       <div class="experience-section-card" style="position: relative;">
-        <p class="experience-count">10</p>
+        <p class="experience-count" data-count="10">0</p>
         <label class="experience-count-title" for="">Years of experience</label>
       </div>
-
 
     </div>
   </div>
 </section>
+
   <!-- Feature End -->
  
 
@@ -1315,38 +1324,49 @@
   
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const counters = document.querySelectorAll(".experience-count");
-      
-      counters.forEach((counter) => {
-        let isHovered = false;
-        let originalValue = parseInt(counter.textContent);  // Get the original value
-  
-        function animateCounter() {
-          if (!isHovered) {
-            let randomValue = Math.floor(Math.random() * 100); // Generate random number 0-99
-            counter.textContent = randomValue;
-          }
-        }
-  
-        // Update the counter every 50 milliseconds
-        let interval = setInterval(animateCounter, 50);
-  
-        // Add hover event listener to display original value on hover
-        counter.parentElement.addEventListener("mouseenter", () => {
-          isHovered = true;
-          counter.textContent = originalValue; // Show original value on hover
-        });
-  
-        counter.parentElement.addEventListener("mouseleave", () => {
-          isHovered = false;
-        });
-      });
-    });
-  </script>
+ 
   
 </body>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+  const counters = document.querySelectorAll(".experience-count");
+  const duration = 4000; // 4 seconds
+
+  // Intersection Observer to start counting when the section is visible
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        startCounting(entry.target);
+        observer.unobserve(entry.target); // Stop observing once counted up
+      }
+    });
+  }, { threshold: 0.5 }); // Trigger when 50% of the section is in view
+
+  counters.forEach(counter => {
+    observer.observe(counter);
+  });
+
+  function startCounting(counter) {
+    const target = +counter.getAttribute("data-count");
+    const start = 0;
+    const increment = target / (duration / 50); // Increment per 50ms for smooth transition
+
+    let count = start;
+    const counting = setInterval(() => {
+      count += increment;
+
+      if (count >= target) {
+        counter.innerText = target; // Set to target value when reached
+        clearInterval(counting); // Stop the counting
+      } else {
+        counter.innerText = Math.ceil(count); // Continue counting
+      }
+    }, 50); // Update every 50ms to ensure smooth count over 4 seconds
+  }
+});
+
+
+</script>
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/custom.js"></script>
